@@ -1,4 +1,7 @@
 
+#This is about the square root trick, I applied the trick to the
+#problem of sampling.
+
 #I rephrase the problem of sampling as a range query
 #which can be efficiently solved in O(sqrt(n)) time
 #by using a 2-level data-structure. The data structure can be 
