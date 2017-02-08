@@ -16,7 +16,7 @@
 from math import ceil, floor, sqrt
 from random import uniform
 
-#Think of this data-structure like a 2-level map
+#Think of this data-structure like a 2-level data-structure with the first resembling an index
 class Sampler:
 
     def __init__(self, elements):
