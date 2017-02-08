@@ -2,7 +2,7 @@
 #This is about the square root trick, I applied the trick to the
 #problem of sampling.
 #From what you see in the below it should be clear that one can build an O(log(N))
-#solution and O(N) space complexity solution.
+#time and O(N) space complexity solution.
 #Just store the cumulative probabilities at each entry and seek the first index such
 #that p(i) >= sample drawn from uniform distribution.
 
