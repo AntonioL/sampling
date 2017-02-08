@@ -47,12 +47,11 @@ class Sampler:
         for i in range(self.buckets - 1):
             if self.f[i] <= p < self.f[i+1]:
                 firstLevel = i
-        #2. Look up on the according second level buckets
+        #2. Look up on the corresponding second level bucket
         cum = self.f[firstLevel]
-        #3. Find the start and end indices of the according second level bucket
         start = firstLevel * self.bucketSize
         end = min(len(self.s), start + self.bucketSize)
-        #4. Loop until we find the element drawn from the Uniform distribution falling in the desired range
+        #3. Loop until we find the element drawn from the Uniform distribution falling in the desired range
         for i in range(start, end):
             if cum <= p < (cum + self.s[i][1]): return self.s[i][0]
             cum += self.s[i][1]
