@@ -13,3 +13,5 @@ The idea is that once we find the right bucket then we have to scan for a maximu
 In the worst-case scenario both the first-leve and second-leve scan visit sqrt(N) elements yielding O(2 * sqrt(N)) complexity hence O(sqrt(N)).
 
 In general the underlying idea is to rephrase the sampling problem as a range query.
+
+For more information about this trick look at this article: http://www.infoarena.ro/blog/square-root-trick
